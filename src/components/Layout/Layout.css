@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: white;
+}
+
+.main-content {
+  background-color: var(--lightgrey-color);
+  margin: 0px;
+  min-height: 100vh;
+  position:absolute;
+  left: 128px;
+  width: calc(100% - 128px);
+}
