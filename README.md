@@ -14,7 +14,7 @@ Project running with:
 
 Clone the project
 
-<code>git clone https://github.com/javigonz/Spotify-API-Search.git
+<code>git clone https://github.com/javigonz/termicadesign.git
 </code>
 
 Install dependencies (node v12.x is minimum requirement)
