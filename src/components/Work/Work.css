@@ -1,4 +1,4 @@
-.main-content_skills {
+.main-content_work {
   height: 100vh;
   margin: 0 100px;
   display: flex;
@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-.main-content_skills h1 {
+.main-content_work h1 {
   color: var(--primary-color);
   font-size: var(--hugexs-size);
   font-weight: bold;

@@ -2,26 +2,40 @@ import React from "react";
 import "./Menu.css";
 import logotermica from "../../images/logotermica.png";
 
-function Menu() {
+function Menu({ selected }) {
   return (
     <div className="main-menu">
       <div className="main-menu_logo">
         <img src={logotermica} alt="TermicaDesign" width="124" height="149" />
-        <a className="small-text" href="/">
-          JS Developer
-        </a>
+        <a className="small-text">JS Developer</a>
       </div>
       <nav className="main-menu_nav">
-        <a real="about" href="About">
+        <a
+          real="about"
+          href="about"
+          className={selected == "about" ? "selected" : "none"}
+        >
           About
         </a>
-        <a real="skills" href="Skills">
+        <a
+          real="skills"
+          href="skills"
+          className={selected == "skills" ? "selected" : "none"}
+        >
           Skills
         </a>
-        <a real="skills" href="">
+        <a
+          real="work"
+          href="work"
+          className={selected == "work" ? "selected" : "none"}
+        >
           Work
         </a>
-        <a real="skills" href="">
+        <a
+          real="contat"
+          href="contact"
+          className={selected == "contact" ? "selected" : "none"}
+        >
           Contact
         </a>
       </nav>

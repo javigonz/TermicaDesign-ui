@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "./components/Layout";
 import About from "./components/About";
 import Skills from "./components/Skills";
+import Work from "./components/Work";
+import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
 import "./App.css";
 
@@ -15,7 +17,7 @@ function App() {
             path="/"
             exact={true}
             render={(props) => (
-              <Layout>
+              <Layout select="about">
                 <About {...props}> </About>
               </Layout>
             )}
@@ -24,7 +26,7 @@ function App() {
             path="/about"
             exact={true}
             render={(props) => (
-              <Layout>
+              <Layout select="about">
                 <About {...props}> </About>
               </Layout>
             )}
@@ -32,8 +34,24 @@ function App() {
           <Route
             path="/skills"
             render={(props) => (
-              <Layout>
+              <Layout select="skills">
                 <Skills {...props}> </Skills>
+              </Layout>
+            )}
+          />
+          <Route
+            path="/work"
+            render={(props) => (
+              <Layout select="work">
+                <Work {...props}> </Work>
+              </Layout>
+            )}
+          />
+          <Route
+            path="/contact"
+            render={(props) => (
+              <Layout select="contact">
+                <Contact {...props}> </Contact>
               </Layout>
             )}
           />

@@ -1,0 +1,27 @@
+.main-content_about {
+  height: 100vh;
+  margin: 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.main-content_about h1 {
+  color: var(--primary-color);
+  font-size: var(--hugexs-size);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-content_specialized {
+  margin: var(--big-size) 0;
+}
+
+.main-content_specialized p {
+  color: var(--almostwhite-color);
+  font-size: var(--medium-size);
+  text-decoration: none;
+  margin: var(--large-size) 0;
+  width: 70%;
+}
