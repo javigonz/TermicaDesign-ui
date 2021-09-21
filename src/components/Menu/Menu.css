@@ -83,4 +83,9 @@
 .social li a svg {
   width: 20px;
   height: auto;
+  fill:var(--middlegrey-color);
+}
+
+.social li a svg:hover {
+  fill: var(--primary-color);
 }
