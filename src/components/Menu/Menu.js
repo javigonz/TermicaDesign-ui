@@ -1,12 +1,12 @@
 import React from "react";
 import "./Menu.css";
-import logo from "../../images/logo.png";
+import logotermica from "../../images/logotermica.png";
 
 function Menu() {
   return (
     <div className="main-menu">
       <div className="main-menu_logo">
-        <img src={logo} alt="TermicaDesign" width="124" height="113" />
+        <img src={logotermica} alt="TermicaDesign" width="124" height="149" />
         <a className="small-text" href="/">
           JS Developer
         </a>
@@ -17,6 +17,12 @@ function Menu() {
         </a>
         <a real="skills" href="Skills">
           Skills
+        </a>
+        <a real="skills" href="">
+          Work
+        </a>
+        <a real="skills" href="">
+          Contact
         </a>
       </nav>
       <div className="main-menu_social">
