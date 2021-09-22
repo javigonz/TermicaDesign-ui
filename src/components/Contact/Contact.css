@@ -1,10 +1,4 @@
 .main-content_contact {
-  height: 100vh;
-  margin: 0 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
 }
 
 .main-content_contact h1 {

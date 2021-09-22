@@ -1,6 +1,4 @@
 .main-content_skills {
-  height: 100vh;
-  margin: 0 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,16 +1,10 @@
 .main {
+  height: 100vh;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: white;
+  flex-direction: column;
+  background-color: black;
 }
 
 .main-content {
-  background: var(--lightgrey-color);
-  background: linear-gradient(180deg, var(--lightgrey-color) 0%, var(--lightgrey-color) 70%, var(--verylightgrey-color) 100%);
-  margin: 0px;
-  min-height: 100vh;
-  position:absolute;
-  left: 135px;
-  width: calc(100% - 135px);
+  flex: auto;
 }

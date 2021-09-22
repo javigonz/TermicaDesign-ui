@@ -11,59 +11,57 @@ import "./App.css";
 function App() {
   return (
     <BrowserRouter>
-      <div>
-        <Switch>
-          <Route
-            path="/"
-            exact={true}
-            render={(props) => (
-              <Layout select="about">
-                <About {...props}> </About>
-              </Layout>
-            )}
-          />
-          <Route
-            path="/about"
-            exact={true}
-            render={(props) => (
-              <Layout select="about">
-                <About {...props}> </About>
-              </Layout>
-            )}
-          />
-          <Route
-            path="/skills"
-            render={(props) => (
-              <Layout select="skills">
-                <Skills {...props}> </Skills>
-              </Layout>
-            )}
-          />
-          <Route
-            path="/work"
-            render={(props) => (
-              <Layout select="work">
-                <Work {...props}> </Work>
-              </Layout>
-            )}
-          />
-          <Route
-            path="/contact"
-            render={(props) => (
-              <Layout select="contact">
-                <Contact {...props}> </Contact>
-              </Layout>
-            )}
-          />
-          <Route
-            render={(props) => (
-              <Layout>
-                <NotFound {...props}> </NotFound>
-              </Layout>
-            )}
-          />
-        </Switch>
-      </div>
+      <Switch>
+        <Route
+          path="/"
+          exact={true}
+          render={(props) => (
+            <Layout select="about">
+              <About {...props}> </About>
+            </Layout>
+          )}
+        />
+        <Route
+          path="/about"
+          exact={true}
+          render={(props) => (
+            <Layout select="about">
+              <About {...props}> </About>
+            </Layout>
+          )}
+        />
+        <Route
+          path="/skills"
+          render={(props) => (
+            <Layout select="skills">
+              <Skills {...props}> </Skills>
+            </Layout>
+          )}
+        />
+        <Route
+          path="/work"
+          render={(props) => (
+            <Layout select="work">
+              <Work {...props}> </Work>
+            </Layout>
+          )}
+        />
+        <Route
+          path="/contact"
+          render={(props) => (
+            <Layout select="contact">
+              <Contact {...props}> </Contact>
+            </Layout>
+          )}
+        />
+        <Route
+          render={(props) => (
+            <Layout>
+              <NotFound {...props}> </NotFound>
+            </Layout>
+          )}
+        />
+      </Switch>
     </BrowserRouter>
   );
 }
