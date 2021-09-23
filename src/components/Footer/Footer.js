@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
+import axios from "axios";
 import "./Footer.css";
 
 function Footer() {
+  const [lastUpdate, useLastUpdate] = useState("");
+
+  axios
+    .get(
+      `https://api.github.com/repos/javigonz/termicadesign/commits?Fbuild.gradle&page=1&per_page=1`
+    )
+    .then((res) => {
+      useLastUpdate(res.data[0].commit.committer.date || "");
+    });
+
   return (
     <div className="main-footer">
-      <div className="main-footer-info">Last update on Thuesday 3 2021</div>
+      <div className="main-footer-info">Last updated on {lastUpdate}</div>
       <ul className="main-footer-social">
         <li>
           <a
