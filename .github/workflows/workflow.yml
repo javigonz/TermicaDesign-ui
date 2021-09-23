@@ -28,4 +28,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-1
       - name: Deploy to S3 Bucket
-        run: npm run deploy --S3Bucket=${{ AWS_S3_APP_BUCKET_PROD }}
+        run: npm run deploy --S3Bucket=${{ secrets.AWS_S3_APP_BUCKET_PROD }}
