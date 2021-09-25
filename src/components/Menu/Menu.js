@@ -14,14 +14,7 @@ function Menu({ selected }) {
           href="about"
           className={selected == "about" ? "selected" : "none"}
         >
-          About
-        </a>
-        <a
-          real="skills"
-          href="skills"
-          className={selected == "skills" ? "selected" : "none"}
-        >
-          Skills
+          About & Skills
         </a>
         <a
           real="work"

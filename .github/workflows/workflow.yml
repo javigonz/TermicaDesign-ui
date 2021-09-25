@@ -27,5 +27,5 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-1
-      - name: Deploy to S3 Bucket
+      - name: Deploy to S3 Bucket & CloudFront
         run: npm run deploy --S3Bucket=${{ secrets.AWS_S3_APP_BUCKET_PROD }} --AWSCloudfrontId=${{ secrets.AWS_CLOUDFRONT_ID_PROD }}

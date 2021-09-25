@@ -31,14 +31,6 @@ function App() {
           )}
         />
         <Route
-          path="/skills"
-          render={(props) => (
-            <Layout select="skills">
-              <Skills {...props}> </Skills>
-            </Layout>
-          )}
-        />
-        <Route
           path="/work"
           render={(props) => (
             <Layout select="work">
