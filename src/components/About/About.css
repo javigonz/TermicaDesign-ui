@@ -57,7 +57,7 @@ p {
 
 .card-container {
 	background-color: black;
-	border-radius: 5px;
+	border-radius: 10px;
   border: 1px solid var(--primary-color);
 	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
 	color: var(--almostwhite-color);
@@ -72,7 +72,7 @@ p {
 .card-container .pro {
 	color: black;
 	background-color: white;
-	border-radius: 3px;
+	border-radius: 5px;
 	font-size: 14px;
 	font-weight: bold;
 	padding: 3px 7px;
@@ -97,7 +97,7 @@ p {
 
 .skills {
 	background-color: var(--almostblack-color);
-  border-radius: 5px;
+  border-radius: 10px;
 	text-align: left;
 	padding: 15px;
 	margin-top: 30px;
