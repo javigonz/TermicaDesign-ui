@@ -2,11 +2,10 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "./components/Layout";
 import About from "./components/About";
-import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
-import LayoutAdmin from "./components/LayoutAdmin";
+import LayoutAdmin from "./components/Admin/LayoutAdmin";
 import Admin from "./components/Admin";
 import "./App.css";
 
