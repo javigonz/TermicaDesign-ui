@@ -5,8 +5,6 @@ import About from "./components/About";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
-import LayoutAdmin from "./components/Admin/LayoutAdmin";
-import Admin from "./components/Admin";
 import "./App.css";
 
 function App() {
@@ -45,14 +43,6 @@ function App() {
             <Layout select="contact">
               <Contact {...props}> </Contact>
             </Layout>
-          )}
-        />
-        <Route
-          path="/admin"
-          render={(props) => (
-            <LayoutAdmin>
-              <Admin {...props}> </Admin>
-            </LayoutAdmin>
           )}
         />
         <Route
