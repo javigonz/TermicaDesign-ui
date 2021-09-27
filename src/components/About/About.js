@@ -42,28 +42,28 @@ function About() {
           <img className="round" src={fotoJaviGonz} alt="user" />
           <h3>Javier González</h3>
           <h6>Málaga (Spain)</h6>
-          <h5>FrontEnd Developer</h5>
+          <h5>Computer Engineering Degree</h5>
           <br />
           <div className="description">
             <p>
               More than <b>15 years</b> of experience <br />
               in create full dinamic Web / Mobile content <br />
               in Javascript / HTML / CSS. <br />
-              Taking care about UI/UX and performance.
+              Taking care about UI/UX, testing and performance.
               <br /> Focus in CI/CD and Cloud computing.
             </p>
           </div>
           <div className="skills">
             <h6>Skills</h6>
             <ul>
-              <li>Javascript / Typescript</li>
+              <li>Javascript</li>
+              <li>Typescript</li>
               <li>HTML</li>
               <li>CSS</li>
               <li>React / React Native</li>
               <li>Angular</li>
               <li>Node</li>
               <li>Nextjs</li>
-
               <li>AWS</li>
               <li>Serverless</li>
             </ul>

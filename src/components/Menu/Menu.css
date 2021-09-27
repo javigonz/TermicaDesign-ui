@@ -38,3 +38,13 @@
   color: var(--primary-color) !important;
 }
 
+.logoHighlight {
+  font-size: var(--bigger-size);
+  color: var(--primary-color);
+}
+
+.logoOverlight {
+  font-size: var(--bigger-size);
+  color: white;
+}
+

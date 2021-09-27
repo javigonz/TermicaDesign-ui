@@ -1,12 +1,12 @@
 import React from "react";
 import "./Menu.css";
-import logotermica from "../../images/logotermica.png";
 
 function Menu({ selected }) {
   return (
     <div className="main-menu_container">
       <div className="main-menu_logo">
-        <img src={logotermica} alt="TermicaDesign" width="224" height="73" />
+        <a className="logoHighlight">Térmica</a>
+        <a className="logoOverlight">Design</a>
       </div>
       <nav className="main-menu_nav">
         <a

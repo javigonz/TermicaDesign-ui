@@ -6,6 +6,8 @@ import Skills from "./components/Skills";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import NotFound from "./components/NotFound";
+import LayoutAdmin from "./components/LayoutAdmin";
+import Admin from "./components/Admin";
 import "./App.css";
 
 function App() {
@@ -44,6 +46,14 @@ function App() {
             <Layout select="contact">
               <Contact {...props}> </Contact>
             </Layout>
+          )}
+        />
+        <Route
+          path="/admin"
+          render={(props) => (
+            <LayoutAdmin>
+              <Admin {...props}> </Admin>
+            </LayoutAdmin>
           )}
         />
         <Route
