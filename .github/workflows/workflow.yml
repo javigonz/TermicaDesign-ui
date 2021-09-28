@@ -1,4 +1,4 @@
-name: Deploy TermicadDesign
+name: Deploy TermicadDesign-ui
 
 on:
   push:
