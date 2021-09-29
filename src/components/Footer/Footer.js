@@ -10,7 +10,8 @@ function Footer() {
       `https://api.github.com/repos/javigonz/termicadesign/commits?Fbuild.gradle&page=1&per_page=1`
     )
     .then((res) => {
-      useLastUpdate(res.data[0].commit.committer.date || "");
+      const date = new Date(res.data[0].commit.committer.date || "");
+      useLastUpdate(date.toUTCString());
     });
 
   return (

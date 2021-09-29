@@ -63,7 +63,7 @@ p {
 	color: var(--almostwhite-color);
 	padding-top: 30px;
 	position: relative;
-	min-width: 350px;
+	width: 380px;
 	max-width: 100%;
 	text-align: center;
   justify-content: center;

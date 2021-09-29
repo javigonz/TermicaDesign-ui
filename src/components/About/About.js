@@ -46,11 +46,14 @@ function About() {
           <br />
           <div className="description">
             <p>
-              More than <b>15 years</b> of experience <br />
+              <b>+15 years</b> of experience <br />
               in create full dinamic Web / Mobile content <br />
-              in Javascript / HTML / CSS. <br />
-              Taking care about UI/UX, testing and performance.
-              <br /> Focus in CI/CD and Cloud computing.
+              in Javascript / HTML / CSS and integration with RESTful APIs
+              <br />
+              <br />
+              Taking care about UI/UX, automated testing and performance. Full
+              stack SW development knowledge <br />
+              <br /> Focus in CI/CD and Cloud computing
             </p>
           </div>
           <div className="skills">
@@ -58,9 +61,10 @@ function About() {
             <ul>
               <li>Javascript</li>
               <li>Typescript</li>
-              <li>HTML</li>
+              <li>HTML5</li>
               <li>CSS</li>
               <li>React / React Native</li>
+              <li>Redux</li>
               <li>Angular</li>
               <li>Node</li>
               <li>Nextjs</li>
