@@ -16,7 +16,7 @@ function Footer() {
 
   return (
     <div className="main-footer">
-      <div className="main-footer-info">Last updated on {lastUpdate}</div>
+      <div className="main-footer-info">Last deploy in AWS on {lastUpdate}</div>
       <ul className="main-footer-social">
         <li>
           <a
