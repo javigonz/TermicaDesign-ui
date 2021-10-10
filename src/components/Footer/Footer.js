@@ -1,18 +1,22 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
+import { useQuery } from "react-query";
+import client from "../../client";
 import "./Footer.css";
 
 function Footer() {
-  const [lastUpdate, useLastUpdate] = useState("");
+  const { data: lastUpdate, isLoading } = useQuery(
+    "lastCommitInfo",
+    () => client.getLastCommitInfo(),
+    {
+      refetchOnWindowFocus: false,
+      select: (data) => {
+        console.log("data --> ", data);
+        const date = new Date(res.data[0].commit.committer.date || "");
 
-  axios
-    .get(
-      `https://api.github.com/repos/javigonz/termicadesign/commits?Fbuild.gradle&page=1&per_page=1`
-    )
-    .then((res) => {
-      const date = new Date(res.data[0].commit.committer.date || "");
-      useLastUpdate(date.toUTCString());
-    });
+        return date.toUTCString();
+      },
+    }
+  );
 
   return (
     <div className="main-footer">
