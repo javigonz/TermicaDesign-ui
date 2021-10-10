@@ -11,7 +11,7 @@ function Footer() {
       refetchOnWindowFocus: false,
       select: (data) => {
         console.log("data --> ", data);
-        const date = new Date(res.data[0].commit.committer.date || "");
+        const date = new Date(data[0].commit.committer.date || "");
 
         return date.toUTCString();
       },
