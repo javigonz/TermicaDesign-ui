@@ -11,6 +11,7 @@ const getWorks = async () => {
     method: "GET",
     headers: {
       "X-Api-Key": process.env.REACT_APP_API_KEY,
+      "Access-Control-Allow-Origin": "*",
     },
   });
   return resp.data;
