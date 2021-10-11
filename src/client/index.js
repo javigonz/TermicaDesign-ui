@@ -10,7 +10,7 @@ const getWorks = async () => {
     url: API_RESOURCE_GET_WORKS,
     method: "GET",
     headers: {
-      "X-Api-Key": process.env.REACT_APP_API_KEY,
+      "X-Api-Key": "MwlT6zMnQ4aM2DKzGcyYMafADKBcid1o1MoYUXgj",
     },
   });
   return resp.data;
