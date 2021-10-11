@@ -13,6 +13,8 @@ function Work() {
     }
   );
 
+  console.log("api key --> ", process.env.REACT_APP_API_KEY);
+
   return (
     <>
       {isLoading ? (
