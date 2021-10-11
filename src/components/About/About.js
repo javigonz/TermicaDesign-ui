@@ -46,7 +46,7 @@ function About() {
           <br />
           <div className="description">
             <p>
-              <b>+15 years</b> of experience <br />
+              <b>+16 years</b> of experience <br />
               in create full dinamic Web / Mobile content <br />
               in Javascript / HTML / CSS and integration with RESTful APIs
               <br />
