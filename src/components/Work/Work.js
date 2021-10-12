@@ -13,8 +13,6 @@ function Work() {
     }
   );
 
-  console.log("api key --> ", process.env);
-
   return (
     <>
       {isLoading ? (
