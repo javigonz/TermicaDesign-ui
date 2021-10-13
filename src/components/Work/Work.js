@@ -2,7 +2,7 @@ import React from "react";
 import { useQuery } from "react-query";
 import "./Work.css";
 import client from "../../client";
-import Loading from "../Loading";
+import Loading from "../loading";
 import AsyncImage from "../AsyncImage";
 
 function Work() {
