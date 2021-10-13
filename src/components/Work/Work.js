@@ -2,7 +2,8 @@ import React from "react";
 import { useQuery } from "react-query";
 import "./Work.css";
 import client from "../../client";
-import Loading from "../loading";
+import Loading from "../Loading";
+import AsyncImage from "../AsyncImage";
 
 function Work() {
   const { data: works = [], isLoading } = useQuery(
@@ -10,6 +11,13 @@ function Work() {
     () => client.getWorks(),
     {
       refetchOnWindowFocus: false,
+      select: (data) => {
+        const newSortedWorks = data.sort((a, b) => {
+          return new Date(b.date) - new Date(a.date);
+        });
+
+        return newSortedWorks;
+      },
     }
   );
 
@@ -20,11 +28,9 @@ function Work() {
       ) : (
         <div className="main-content_work">
           {works.map((work) => (
-            <article className="card" key="work.workId">
+            <article className="card" key={work.workId}>
               <header className="card__thumb">
-                <a>
-                  <img src={work.image} />
-                </a>
+                <AsyncImage src={work.image} />
               </header>
               <div className="card__body">
                 <div className="card__category">
