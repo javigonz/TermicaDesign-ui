@@ -19,10 +19,10 @@ function About() {
             <b> passionate software developer</b>, expert in Javascript and
             latest web technology. Specialized in drawing and polishing FrontEnd
             architectures (with or without framework).
-            <br /> I love working with teams that can inspire me or provide
-            solutions to any problem or challenge. I constantly need to know
-            about the latest technologies and methodologies, that&apos;s why I
-            like twitter so much.
+            <br /> I´ve got experience working with agile methodologies and full
+            remote teams. I love working with teams that can inspire me or
+            provide solutions to any problem or challenge. I constantly need to
+            know about the latest technologies.
           </p>
           <p>
             Enthusiastic about outdoor sports, especially cycling and any
