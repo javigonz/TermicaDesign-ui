@@ -98,7 +98,7 @@ function About() {
               <li>Nextjs</li>
               <li>AWS</li>
               <li>Serverless</li>
-              <li>Photoshop</li>
+              <li>Adobe suit</li>
             </ul>
           </div>
         </div>

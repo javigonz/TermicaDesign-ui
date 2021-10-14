@@ -34,7 +34,7 @@
 
 .chart span {
     font-size: 14px;
-		color: white;
+		color: var(--almostwhite-color);
     margin-bottom: 4px;
     display: block;
 }
