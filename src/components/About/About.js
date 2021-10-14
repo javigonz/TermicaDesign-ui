@@ -39,15 +39,15 @@ function About() {
             </footer>
           </div>
           <div className="chart">
-            <span>Angular</span>
-            <footer>
-              <div data-width="90%" style={{ width: "15%" }}></div>
-            </footer>
-          </div>
-          <div className="chart">
             <span>NextJs</span>
             <footer>
               <div data-width="90%" style={{ width: "75%" }}></div>
+            </footer>
+          </div>
+          <div className="chart">
+            <span>Jest / Testing-library / Cypress</span>
+            <footer>
+              <div data-width="90%" style={{ width: "85%" }}></div>
             </footer>
           </div>
           <div className="chart">
@@ -59,7 +59,7 @@ function About() {
           <div className="chart">
             <span>AWS / Serveless</span>
             <footer>
-              <div data-width="90%" style={{ width: "60%" }}></div>
+              <div data-width="90%" style={{ width: "50%" }}></div>
             </footer>
           </div>
         </div>
