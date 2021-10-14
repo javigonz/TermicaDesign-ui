@@ -5,10 +5,12 @@ Personal Portfolio
 Project running with:
 
 - Javascript / React
+- React Router
 - CSS vanilla
 - Babel for transpiler code
 - Testing with Testing-Library & Jest
 - Formatter with prettier and esLint
+- Deploy in AWS
 
 # Setup
 
@@ -41,4 +43,6 @@ It checks code with esLint
 
 <code>npm run build</code>
 
-Core code ready to use in /build folder
+Core code ready to use in /build folder.
+Add a GitHub Actions in each commit in order to start a pipeline and deploy the app in AWS.
+Deploy in www.termicadesign.com
