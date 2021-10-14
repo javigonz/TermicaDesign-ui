@@ -39,10 +39,16 @@ It checks code with esLint
 
 <code>npm run lint</code>
 
-# Deploy
+# Build
 
 <code>npm run build</code>
 
 Core code ready to use in /build folder.
+
+# Deploy
+
+<code>npm run deploy</code>
+
 Add a GitHub Actions in each commit in order to start a pipeline and deploy the app in AWS.
 Deploy in www.termicadesign.com
+
