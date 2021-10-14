@@ -19,21 +19,49 @@ function About() {
             <b> passionate software developer</b>, expert in Javascript and
             latest web technology. Specialized in drawing and polishing FrontEnd
             architectures (with or without framework).
-          </p>
-          <p>
-            I love working with teams that can inspire me or provide solutions
-            to any problem or challenge. I constantly need to know about the
-            latest technologies and methodologies, that&apos;s why I like
-            twitter so much.
+            <br /> I love working with teams that can inspire me or provide
+            solutions to any problem or challenge. I constantly need to know
+            about the latest technologies and methodologies, that&apos;s why I
+            like twitter so much.
           </p>
           <p>
             Enthusiastic about outdoor sports, especially cycling and any
             activity in the sea. At home, I can&apos;t stop watching series or
             horror movies, reading autobiographical books and visiting any art
-            gallery that exhibits impressionist paintings. <br />
-            One of my latest passions is listening to podcasts about videogames
-            while programming.
+            gallery that exhibits impressionist paintings.
           </p>
+        </div>
+        <div className="main-content_skillsdetails">
+          <div className="chart">
+            <span>React / React native</span>
+            <footer>
+              <div data-width="90%" style={{ width: "95%" }}></div>
+            </footer>
+          </div>
+          <div className="chart">
+            <span>Angular</span>
+            <footer>
+              <div data-width="90%" style={{ width: "15%" }}></div>
+            </footer>
+          </div>
+          <div className="chart">
+            <span>NextJs</span>
+            <footer>
+              <div data-width="90%" style={{ width: "75%" }}></div>
+            </footer>
+          </div>
+          <div className="chart">
+            <span>NodeJs</span>
+            <footer>
+              <div data-width="90%" style={{ width: "20%" }}></div>
+            </footer>
+          </div>
+          <div className="chart">
+            <span>AWS / Serveless</span>
+            <footer>
+              <div data-width="90%" style={{ width: "60%" }}></div>
+            </footer>
+          </div>
         </div>
       </div>
       <div className="main-content-skills">
@@ -46,7 +74,7 @@ function About() {
           <br />
           <div className="description">
             <p>
-              <b>+16 years</b> of experience <br />
+              <b>+15 years</b> of experience <br />
               in create full dinamic Web / Mobile content <br />
               in Javascript / HTML / CSS and integration with RESTful APIs
               <br />
@@ -70,6 +98,7 @@ function About() {
               <li>Nextjs</li>
               <li>AWS</li>
               <li>Serverless</li>
+              <li>Photoshop</li>
             </ul>
           </div>
         </div>

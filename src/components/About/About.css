@@ -8,7 +8,6 @@
 .main-content_me {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .main-content_me h1 {
@@ -22,6 +21,39 @@
   margin: var(--big-size) 0;
 }
 
+.main-content_skillsdetails {
+  margin: var(--big-size) 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.chart {
+	width: 80%;
+	margin-bottom: 15px;
+}
+
+.chart span {
+    font-size: 14px;
+		color: white;
+    margin-bottom: 4px;
+    display: block;
+}
+
+.chart footer {
+    background-color: #373737;
+    height: 2px;
+}
+
+.chart footer div {
+    width: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    -webkit-transition: width 1.3s ease-out;
+    -o-transition: width 1.3s ease-out;
+    transition: width 1.3s ease-out;
+}
+
+
 .main-content_specialized p {
   color: var(--almostwhite-color);
   font-size: var(--medium-size);
@@ -29,7 +61,6 @@
   margin: var(--large-size) 0;
   width: 80%;
 }
-
 
 h3 {
 	margin: 10px 0;
