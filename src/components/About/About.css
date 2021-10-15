@@ -173,7 +173,7 @@ h1:before {
 }
 
 h1:after {
-    content: '<h2/>';
+    content: '</h2>';
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
     font-size: 18px;
@@ -193,7 +193,7 @@ h1:after {
 }
 
 .main-content_specialized:after {
-	content: '<p>';
+	content: '</p>';
 	font-family: 'La Belle Aurore',cursive;
 	color: #515152;
 	font-size: 18px;
@@ -208,7 +208,7 @@ h1:after {
 	color: #515152;
 	font-size: 18px;
 	position: absolute;
-	margin-top: -5rem;
+	margin-top: -3rem;
 	margin-left: -50px;
 }
 
@@ -218,6 +218,26 @@ h1:after {
 	color: #515152;
 	font-size: 18px;
 	position: absolute;
-	margin-top: 14rem;
+	margin-top: 12rem;
+	margin-left: -50px;
+}
+
+.main-content-skills:before {
+	content: '<section>';
+	font-family: 'La Belle Aurore',cursive;
+	color: #515152;
+	font-size: 18px;
+	position: absolute;
+	margin-top: -2rem;
+	margin-left: -50px;
+}
+
+.main-content-skills:after {
+	content: '</section>';
+	font-family: 'La Belle Aurore',cursive;
+	color: #515152;
+	font-size: 18px;
+	position: absolute;
+	margin-top: 1rem;
 	margin-left: -50px;
 }
