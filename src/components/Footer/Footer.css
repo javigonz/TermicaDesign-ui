@@ -6,6 +6,8 @@
   height: 133px;
   padding: 0 30px;
   color: var(--verylightgrey-color);
+  z-index: 10;
+  background-color: black;
 }
 
 .main-footer-social {
