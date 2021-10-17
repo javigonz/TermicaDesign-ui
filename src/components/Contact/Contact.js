@@ -4,7 +4,6 @@ import axios from "axios";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 function Contact() {
-  console.log(process.env);
   const lib = ["places"];
   const id = ["9efe2f9aff21c394"];
   const key = process.env.REACT_APP_API_KEY_GOOGLEMAP;
