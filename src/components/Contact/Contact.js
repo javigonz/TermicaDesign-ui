@@ -4,9 +4,10 @@ import axios from "axios";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 
 function Contact() {
+  console.log(process.env);
   const lib = ["places"];
   const id = ["9efe2f9aff21c394"];
-  const key = "AIzaSyCcj1msu2deKS2RL8rm2CZCSukq-hVAp44";
+  const key = process.env.REACT_APP_API_KEY_GOOGLEMAP;
   const MalagaLocation = { lat: 36.7212, lng: -4.4217 };
 
   return (

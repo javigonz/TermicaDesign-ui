@@ -20,7 +20,7 @@ jobs:
       - name: Run Test
         run: npm  run test
       - name: Build
-        run: npm run build --AWSApiKey=${{ secrets.REACT_APP_API_KEY }}
+        run: npm run build --AWSApiKey=${{ secrets.REACT_APP_API_KEY }} --GOOLEMAPApiKey=${{ secrets.REACT_APP_API_KEY_GOOGLEMAP }}
       - name: Set AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
