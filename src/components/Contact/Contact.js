@@ -1,19 +1,63 @@
 import React, { useState } from "react";
+import { useQuery } from "react-query";
 import "./Contact.css";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import iconGoogle from "../../images/googleIcon.png";
+import client from "../../client";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Contact() {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState();
+  const [name, setName] = useState();
+  const [message, setMessage] = useState();
   const lib = ["places"];
   const id = ["9efe2f9aff21c394"];
   const key = process.env.REACT_APP_API_KEY_GOOGLEMAP;
   const MalagaLocation = { lat: 36.7212, lng: -4.4217 };
 
+  const setMessageConfig = {
+    position: "bottom-right",
+    autoClose: 4000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+  };
+
   const onSubmit = (event) => {
     event.preventDefault();
+
+    if (name && email && message) {
+      const params = {
+        to: client.TARGET_EMAIL,
+        from: client.TARGET_EMAIL,
+        text: message,
+        name: `${name} / ${email}`,
+      };
+
+      client
+        .sendEmail(params)
+        .then((response) => {
+          setEmail("");
+          setName("");
+          setMessage("");
+
+          toast.success(
+            "Mail was sent correctly, thank you!",
+            setMessageConfig
+          );
+        })
+        .catch((error) => {
+          toast.error(
+            "Something went wrong, try again later.",
+            setMessageConfig
+          );
+        });
+    } else {
+      toast.warn("Please, complete all fields.", setMessageConfig);
+    }
   };
 
   return (
@@ -34,18 +78,21 @@ function Contact() {
         <form onSubmit={onSubmit}>
           <div className="input-fields">
             <input
+              type="text"
               placeholder="Name"
               className="input-line full-width"
               value={name}
               onChange={(event) => setName(event.target.value)}
             ></input>
             <input
+              type="email"
               placeholder="Email"
               className="input-line full-width"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
             ></input>
             <textarea
+              type="text"
               placeholder="Message"
               className="input-line full-width"
               value={message}
@@ -67,6 +114,17 @@ function Contact() {
         <br />
         javier.gonzalez@gmail.com
       </div>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={4000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <div className="main-content_map ">
         <LoadScript
           googleMapsApiKey={key}
