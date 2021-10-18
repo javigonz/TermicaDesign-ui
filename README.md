@@ -25,6 +25,12 @@ Install dependencies (node v12.x is minimum requirement)
 
 # Run locally
 
+You will need to setup an enviroment file `.env` with
+```
+REACT_APP_API_KEY=XXX
+REACT_APP_API_KEY_GOOGLEMAP=YYY
+```
+
 <code>npm run start</code>
 
 Run in http://localhost:3000
