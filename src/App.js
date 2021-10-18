@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import Layout from "./components/Layout";
 import About from "./components/About";
 import Work from "./components/Work";
@@ -11,15 +11,9 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route
-          path="/"
-          exact={true}
-          render={(props) => (
-            <Layout select="about">
-              <About {...props}> </About>
-            </Layout>
-          )}
-        />
+        <Route path="/" exact={true}>
+          <Redirect to="/about" />
+        </Route>
         <Route
           path="/about"
           exact={true}
@@ -45,13 +39,7 @@ function App() {
             </Layout>
           )}
         />
-        <Route
-          render={(props) => (
-            <Layout>
-              <NotFound {...props}> </NotFound>
-            </Layout>
-          )}
-        />
+        <Redirect to="/about" />
       </Switch>
     </BrowserRouter>
   );
