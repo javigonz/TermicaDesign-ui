@@ -125,7 +125,7 @@ function Contact() {
         draggable
         pauseOnHover
       />
-      <div className="main-content_map ">
+      <div className="main-content_map">
         <LoadScript
           googleMapsApiKey={key}
           libraries={lib}
