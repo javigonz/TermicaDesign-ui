@@ -24,6 +24,7 @@ function Contact() {
     pauseOnHover: true,
     draggable: true,
     progress: undefined,
+    theme: "colored",
   };
 
   const onSubmit = (event) => {

@@ -5,7 +5,6 @@
   "description": "Personal portfolio of Javier Gonzalez as a Frontend web developer",
   "private": false,
   "dependencies": {
-    "@fontsource/la-belle-aurore": "^4.5.0",
     "@react-google-maps/api": "^2.5.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",

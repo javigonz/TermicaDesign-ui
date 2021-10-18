@@ -39,7 +39,7 @@ function About() {
             </footer>
           </div>
           <div className="chart">
-            <span>NextJs</span>
+            <span>Next.js</span>
             <footer>
               <div data-width="90%" style={{ width: "75%" }}></div>
             </footer>
@@ -95,7 +95,7 @@ function About() {
               <li>Redux</li>
               <li>Angular</li>
               <li>Node</li>
-              <li>Nextjs</li>
+              <li>Next.js</li>
               <li>AWS</li>
               <li>Serverless</li>
               <li>Adobe suit</li>
