@@ -10,6 +10,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.4",
+    "jest-mock-axios": "^4.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-query": "^3.25.1",
@@ -21,7 +22,8 @@
     "start": "react-scripts start",
     "build": "REACT_APP_API_KEY=$npm_config_AWSApiKey REACT_APP_API_KEY_GOOGLEMAP=$npm_config_GOOLEMAPApiKey react-scripts build",
     "deploy": "aws s3 sync ./build s3://$npm_config_S3Bucket && aws cloudfront create-invalidation --distribution-id $npm_config_AWSCloudfrontId --paths \"/*\" ",
-    "test": "react-scripts test",
+    "test": "react-scripts test --verbose",
+    "test:watch": "react-scripts test --watch --verbose",
     "lint": "eslint . --ignore-path .gitignore --ext .js",
     "eject": "react-scripts eject"
   },
