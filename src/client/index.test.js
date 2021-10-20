@@ -15,7 +15,7 @@ describe("getWorks method", () => {
     expect(result).toEqual("foo");
     const request = mockAxios.request;
     expect(request).toHaveBeenCalledWith({
-      url: "https://tij1t4a5jl.execute-api.us-east-1.amazonaws.com/prod/termicadesign-api/get-works",
+      url: "https://api.termicadesign.com/termicadesign-api/get-works",
       headers: expect.any(Object),
       method: "GET",
     });
@@ -71,7 +71,7 @@ describe("sendEmail method", () => {
     expect(result).toEqual("foo");
     const request = mockAxios.request;
     expect(request).toHaveBeenCalledWith({
-      url: "https://tij1t4a5jl.execute-api.us-east-1.amazonaws.com/prod/termicadesign-api/send-email",
+      url: "https://api.termicadesign.com/termicadesign-api/send-email",
       method: "POST",
       data: params,
       headers: expect.any(Object),
