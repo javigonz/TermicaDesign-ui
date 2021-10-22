@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "TermicaDesign",
+  "name": "Personal portfolio of Javier Gonzalez as a frontend developer in React",
   "icons": [
     {
       "src": "favicon.ico",
