@@ -28,14 +28,11 @@ function Work() {
         <Loading></Loading>
       ) : (
         <div className="main-content_work">
-          {works.map(
-            (work, index) =>
-              index < 13 && (
-                <Delayed key={work.workId} waitBeforeShow={index * 100}>
-                  <CardWork key={work.workId} item={work}></CardWork>
-                </Delayed>
-              )
-          )}
+          {works.map((work, index) => (
+            <Delayed key={work.workId} waitBeforeShow={index * 100}>
+              <CardWork key={work.workId} item={work}></CardWork>
+            </Delayed>
+          ))}
         </div>
       )}
     </>
