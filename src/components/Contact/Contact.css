@@ -213,4 +213,12 @@ button:focus {
   }
 }
 
+.maptransition-enter {
+  opacity: 0;
+}
+.maptransition-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useQuery } from "react-query";
 import "./Contact.css";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
@@ -6,6 +6,7 @@ import iconGoogle from "../../images/googleIcon.png";
 import client from "../../client";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { CSSTransition } from "react-transition-group";
 
 function Contact() {
   const [email, setEmail] = useState();
@@ -15,6 +16,11 @@ function Contact() {
   const id = ["9efe2f9aff21c394"];
   const key = process.env.REACT_APP_API_KEY_GOOGLEMAP;
   const MalagaLocation = { lat: 36.7212, lng: -4.4217 };
+  const [showMap, setShowMap] = useState(false);
+
+  useEffect(() => {
+    setShowMap(true);
+  }, []);
 
   const setMessageConfig = {
     position: "bottom-right",
@@ -126,30 +132,37 @@ function Contact() {
         draggable
         pauseOnHover
       />
-      <div className="main-content_map">
-        <LoadScript
-          googleMapsApiKey={key}
-          libraries={lib}
-          mapIds={id}
-          language="en"
-        >
-          <GoogleMap
-            center={MalagaLocation}
-            zoom={7}
-            options={{ mapId: "9efe2f9aff21c394" }}
-            mapContainerStyle={{
-              height: "100%",
-              width: "100%",
-              position: "absolute",
-              top: "0px",
-              left: "0px",
-              backgroundColor: "#000",
-            }}
+      <CSSTransition
+        in={showMap}
+        timeout={500}
+        classNames="maptransition"
+        unmountOnExit
+      >
+        <div className="main-content_map">
+          <LoadScript
+            googleMapsApiKey={key}
+            libraries={lib}
+            mapIds={id}
+            language="en"
           >
-            <Marker position={MalagaLocation} icon={iconGoogle} />
-          </GoogleMap>
-        </LoadScript>
-      </div>
+            <GoogleMap
+              center={MalagaLocation}
+              zoom={7}
+              options={{ mapId: "9efe2f9aff21c394" }}
+              mapContainerStyle={{
+                height: "100%",
+                width: "100%",
+                position: "absolute",
+                top: "0px",
+                left: "0px",
+                backgroundColor: "#000",
+              }}
+            >
+              <Marker position={MalagaLocation} icon={iconGoogle} />
+            </GoogleMap>
+          </LoadScript>
+        </div>
+      </CSSTransition>
     </div>
   );
 }
